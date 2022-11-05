@@ -25,7 +25,9 @@ function getArrayParams(arr) {
 function worker(arr) {
   let sum;
 
-  // Ваш код
+  for (let i = 0; i < arr.length; i++) {
+    sum = sum + arr[i];
+  }
 
   return sum;
 }
@@ -33,13 +35,17 @@ function worker(arr) {
 function makeWork(arrOfArr, func) {
   let max;
 
-  // Ваш кода
-  // for ...
+  for (let i = 0; i < arrOfArr.length; i++) {
+    let arrSum = func(arrOfArr[i]);
+    if (arrSum > max) {
+      max = arrSum;
+    }
+  }
 
   return max;
 }
 
 // Задание 3
 function worker2(arr) {
-  // Ваш код
+  return getArrayParams(arr).max - getArrayParams(arr).min;
 }
