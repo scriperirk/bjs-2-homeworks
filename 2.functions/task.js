@@ -36,9 +36,9 @@ function makeWork(arrOfArr, func) {
   let max;
 
   for (let i = 0; i < arrOfArr.length; i++) {
-    let arrSum = func(arrOfArr[i]);
-    if (arrSum > max) {
-      max = arrSum;
+    let arrSumElements = func(arrOfArr[i]);
+    if (arrSumElements > max) {
+      max = arrSumElements;
     }
   }
 
@@ -47,5 +47,6 @@ function makeWork(arrOfArr, func) {
 
 // Задание 3
 function worker2(arr) {
-  return getArrayParams(arr).max - getArrayParams(arr).min;
+  const result = getArrayParams(arr);
+  return result.max - result.min;
 }
