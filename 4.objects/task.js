@@ -24,6 +24,9 @@ Student.prototype.addMarks = function (...marks) {
   }
 }
 
+Student.prototype.getAverage = function (subjectName) {
+  return (this.marks.reduce((acc,it) => {return acc+it}, 0) /this.marks.length);
+}
 //new Student("Anton","male","21");
 //new Student("Tatiana","female","22");
 //new Student("Kirill","male","18");
