@@ -9,7 +9,7 @@ Student.prototype.setSubject = function (subjectName) {
   this.subject = subjectName;
 }
 
-new Student("Anton","male","21");
-new Student("Tatiana","female","22");
-new Student("Kirill","male","18");
+//new Student("Anton","male","21");
+//new Student("Tatiana","female","22");
+//new Student("Kirill","male","18");
 
