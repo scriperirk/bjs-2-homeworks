@@ -18,6 +18,11 @@ Student.prototype.addMark = function (mark) {
 
 }
 
+Student.prototype.addMarks = function (...marks) {
+  for (let mark of marks) {
+    this.addMark(mark);
+  }
+}
 
 //new Student("Anton","male","21");
 //new Student("Tatiana","female","22");
